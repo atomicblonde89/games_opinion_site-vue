@@ -1,5 +1,5 @@
 <template>
-  <div v-if="isOpenModalOpinion">
+  <div id="modal" v-if="isOpenModalOpinion">
     <transition name="modal">
       <div class="modal-mask">
         <div class="modal-wrapper">
@@ -9,14 +9,14 @@
                 <h5 class="modal-title">
                   {{ getTitleModal(gameSelected) }}
                 </h5>
-                <button
+                <b-button
                   type="button"
                   class="close btn btn-danger"
                   data-dismiss="modal"
                   aria-label="Close"
                 >
                   <span aria-hidden="true" @click="closeModal">&times;</span>
-                </button>
+                </b-button>
               </div>
               <div class="modal-body">
                 <div class="mb-3">
@@ -42,9 +42,9 @@
                 </div>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" @click="closeModal">
+                <b-button type="button" class="btn btn-secondary" @click="closeModal">
                   Cerrar
-                </button>
+                </b-button>
                 <button type="button" class="btn btn-primary" @click="accion">
                   Guardar
                 </button>
@@ -109,6 +109,10 @@ export default {
 </script>
 
 <style scoped>
+
+.modal-content {
+  background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSmNFPH_lXFlNt5yCLIsCj4HIClsdxO3QvDw&usqp=CAU");
+}
 .modal-mask {
   position: fixed;
   z-index: 9998;
