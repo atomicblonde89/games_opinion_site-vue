@@ -6,7 +6,7 @@
     <div v-else id="accordin_lista_opinions" class="accordion">
       <div v-for="(opinion, index) in opinions" :key="index" class="accordion-item">
         <h2 class="accordion-header" :id="'heading' + index">
-          <button
+          <b-button
             class="accordion-button"
             type="button"
             data-bs-toggle="collapse"
@@ -15,7 +15,7 @@
             :aria-controls="'collapse' + index"
           >
             {{ getLabelAccordinTitle(opinion) }}
-          </button>
+          </b-button>
         </h2>
         <div
           :id="'collapse' + index"

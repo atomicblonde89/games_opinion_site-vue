@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-light bg-danger">
     <div class="container">
       <router-link
         class="navbar-brand d-flex w-50 me-auto align-items-center text-light"
@@ -41,3 +41,9 @@
     </div>
   </nav>
 </template>
+
+<style scoped>
+.navbar {
+  background-image: url("../assets/consoles.jpg");
+}
+</style>

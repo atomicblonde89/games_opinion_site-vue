@@ -20,25 +20,25 @@
           <td>{{ opinion.nombre_juego }}</td>
           <td>{{ opinion.opinion }}</td>
           <td>
-            <button
+            <b-button
               :id="'btn-eliminar-' + index"
               class="btn btn-danger me-2"
               @click="deleteOpinion(index)"
             >
               Eliminar
-            </button>
-            <button
+            </b-button>
+            <b-button
               :id="'btn-editar-' + index"
               class="btn btn-info"
               @click="editar(index)"
             >
               Editar
-            </button>
+            </b-button>
           </td>
         </tr>
       </tbody>
     </table>
-    <ModalComments isEditing />
+    <Modal isEditing />
   </div>
 </template>
 
