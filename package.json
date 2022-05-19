@@ -27,7 +27,7 @@
     "@vue/vue2-jest": "^27.0.0-alpha.2",
     "babel-jest": "^27.0.6",
     "cypress": "^8.3.0",
-    "jest": "^27.0.5",
+    "jest": "^27.5.1",
     "vue-template-compiler": "^2.6.14"
   }
 }
