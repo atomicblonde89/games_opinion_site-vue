@@ -1,4 +1,4 @@
-# gamesopiniosite
+# Games Opinion Site
 
 ## Project setup
 ```
